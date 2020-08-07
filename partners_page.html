@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GLOBUS Home</title>
+
+	<script
+	src="https://code.jquery.com/jquery-3.5.1.js"
+	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	crossorigin="anonymous"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media2.css">
+</head>
+<body>
+
+	<ul class="container">
+		<li><a href="index.html">Main</a></li>
+		<li><a href="catalog_grid.html">Catalog grid</a></li>
+		<li><a href="catalog_list.html">Catalog list</a></li>
+		<li><a href="product_page.html">Product page</a></li>
+		<li><a href="basket_page.html">Basket page</a></li>
+		<li><a href="thxpage.html">Thx page</a></li>
+		<li><a href="news_page.html">News page</a></li>
+		<li><a href="news_item_page.html">News item page</a></li>
+		<li><a href="partners_page.html">Partners page</a></li>
+		<li><a href="tehnopage.html">Tehnologies page</a></li>
+		<li><a href="tehnoitempage.html">Tehnologies item page</a></li>
+		<li><a href="contact_page.html">Contact page</a></li>
+		<li><a href="aboutpage.html">About page</a></li>
+		<li><a href="acc_page.html">Accaunt page</a></li>
+		<li><a href="history.html">History</a></li>
+	</ul>
+
+	<!-- header -->
+	<header class="header">
+		<div class="topheader_bg adaptation_none">
+			<div class="container ">
+				<div class="topheader row">
+					<ul class="topheader_l col-7 row text-center">
+						<li class="col"><a href="#">О компании</a> </li>
+						<li class="col"><a href="#">Новости</a></li>
+						<li class="col"><a href="#">Технологии</a></li>
+						<li class="col"><a href="#">Партнеры</a></li>
+						<li class="col"><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="topheader_r col-5 row text-right">
+						<li class="topheader_mail col-4 ml-5"><a href="info@ao-globus.ru">info@ao-globus.ru</a></li>
+						<li class="topheader_phone col-4"> <a href="88005555555">8 800 555-55-55</a></li>
+						<li><a class="active_lng col-4" href="#">RU</a><span><a href="#">EN</a></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="centerheader">
+			<div class="container">
+				<div class="row">
+					<a href="#" class="logo col-3 adaptation_none"><img src="img/logo.svg" alt=""></a>
+					<form class="col-5 search adaptation_none" action="#">
+						<input type="text" placeholder="Поиск" name="search">
+						<button type="submit">Найти</button>
+					</form>
+					<button style="border:none; background: #fff;" type="button" data-toggle="modal" data-target="#exampleModal">
+						<a href="#" class="col-1 user adaptation_none"><img class="" src="img/user.svg" alt=""></a>
+					</button>
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-body" id="modal-body">
+									<ul class="tabs row" style="margin-left: -70px">
+										<li class="col-6 text-center tab">
+											<span class="signin" id="signin_h">Вход</span>
+											<div class="tab-content modalcont1">
+												<input class="mt-4" type="email" id="email" placeholder="E-mail">
+												<input class="mt-4" type="email" id="email" placeholder="Пароль">
+												<button class="mt-5 mb-2" type="signin">Войти</button>
+												<a  href="#">Забыли пароль?</a>
+											</div>			
+										</li>
+										<li class="col-6 text-center tab">
+											<span class="signup" id="signup_h">Регистрация</span>
+											<div class="tab-content modalcont2">
+												<input class="mt-4" type="email" id="email" placeholder="Название организации">
+												<input class="mt-4" type="email" id="email" placeholder="ИНН">
+												<input class="mt-4" type="email" id="email" placeholder="ОГРН">
+												<input class="mt-4" type="email" id="email" placeholder="БИК">
+												<input class="mt-4" type="email" id="email" placeholder="Расчетный счет">
+												<input class="mt-4" type="email" id="email" placeholder="E-mail">
+												<input class="mt-4" type="email" id="email" placeholder="Пароль">
+												<button class="mt-4" type="signin">Зарегистрироваться</button>
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<a href="#" class="col-1 basket  adaptation_none"><img src="img/basket.svg" alt=""></a>
+
+					<a href="#" class="col-2 money  adaptation_none">20 020 070₽</a>
+				</div>
+			</div>
+
+
+
+
+			<hr class="adaptation_none">
+			<div class="container adaptation_none">
+
+				<div class="row text-center">
+					<ul class="col-3 navbar-nav adaptation_none">
+						<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Чертежные принадлежности</a>
+						<ul class="dropdown-menu fade-up">
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="col-3 navbar-nav adaptation_none">
+					<a class="nav-link  dropdown-toggle " href="#" data-toggle="dropdown">Офисные принадлежности</a>
+					<ul class="dropdown-menu fade-up office_con">
+						<li><a class="dropdown-item" href="#">Скрепки без покрытия</a></li>
+						<li><a class="dropdown-item" href="#">Скрепки оцинкованные</a></li>
+						<li><a class="dropdown-item" href="#">Скрепки никелированные</a></li>
+						<li><a class="dropdown-item" href="#">Скрепки с полимерным покрытием</a></li>
+						<li><a class="dropdown-item" href="#">Скрепки в евробоксах</a></li>
+						<li><a class="dropdown-item" href="#">Скобы для степлера</a></li>
+						<li><a class="dropdown-item" href="#">Скобы для степлера строительные (хобби)</a></li>
+						<li><a class="dropdown-item" href="#">Кнопки и булавки</a></li>
+						<li><a class="dropdown-item" href="#">Зажимы для бумаг</a></li>
+						<li><a class="dropdown-item" href="#">Наборы мелкоофисных принадлежностей</a></li>
+						<li><a class="dropdown-item" href="#">Клей карандаш</a></li>
+						<li><a class="dropdown-item" href="#">Подставка под календарь</a></li>
+						<li><a class="dropdown-item" href="#">Шило</a></li>
+						<li><a class="dropdown-item" href="#">Наборы магнитов</a></li>
+						<li><a class="dropdown-item" href="#">Точилки</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="col-3 navbar-nav adaptation_none">
+				<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Школные принадлежности</a>
+				<ul class="dropdown-menu fade-up">
+					<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+					<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+					<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="col-3 navbar-nav adaptation_none">
+			<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Товары для творчества</a>
+			<ul class="dropdown-menu fade-up">
+				<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+				<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+				<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</nav>
+</div>
+</div>
+<hr class="adaptation_none">
+</header>
+<div class="container-fluid adaptation_block">
+	<div class="row">
+		<div class="navbar-container">
+			<nav class="navbar navbar-expand-md navbar-light">
+				<a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+				<span class="navbar-icon"><img src="img/phone.svg" width="24px"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<hr>
+				<ul class="navbar-nav">
+					<li class="nav-item row">
+						<img class="col-3 mt-1" src="img/basket.svg" height="26">
+						<a class="col-8 ml-1 basket_bm" href="#">20 020 070₽</a>
+					</li>
+					<hr>
+					<li class="nav-item row">
+						<img class="col-3 mt-1" src="img/user.svg" height="26">
+						
+						<button style="border:none; background: #fff;" type="button" data-toggle="modal" data-target="#exampleModal">
+							<a class="col-8 ml-1 user_bm" href="#">Личный кабинет</a>
+						</button>
+					</li>
+					<hr>
+					<li class="nav-item row">
+						<a class="col phml_bm mt-5 mb-5" href="info@ao-globus.ru">info@ao-globus.ru</a>
+						<a class="col phml_bm mt-5 mb-5" href="88005555555">8 800 555-55-55</a>
+					</li>
+					<hr>
+					<li class="nav-item">
+						<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Чертежные принадлежности</a>
+						<ul class="dropdown-menu fade-up">
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+						</ul>
+					</li>
+					<hr>
+					<li class="nav-item">
+						<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Офисные принадлежности</a>
+						<ul class="dropdown-menu fade-up">
+							<li><a class="dropdown-item" href="#">Скрепки без покрытия</a></li>
+							<li><a class="dropdown-item" href="#">Скрепки оцинкованные</a></li>
+							<li><a class="dropdown-item" href="#">Скрепки никелированные</a></li>
+							<li><a class="dropdown-item" href="#">Скрепки с полимерным покрытием</a></li>
+							<li><a class="dropdown-item" href="#">Скрепки в евробоксах</a></li>
+							<li><a class="dropdown-item" href="#">Скобы для степлера</a></li>
+							<li><a class="dropdown-item" href="#">Скобы для степлера строительные (хобби)</a></li>
+							<li><a class="dropdown-item" href="#">Кнопки и булавки</a></li>
+							<li><a class="dropdown-item" href="#">Зажимы для бумаг</a></li>
+							<li><a class="dropdown-item" href="#">Наборы мелкоофисных принадлежностей</a></li>
+							<li><a class="dropdown-item" href="#">Клей карандаш</a></li>
+							<li><a class="dropdown-item" href="#">Подставка под календарь</a></li>
+							<li><a class="dropdown-item" href="#">Шило</a></li>
+							<li><a class="dropdown-item" href="#">Наборы магнитов</a></li>
+							<li><a class="dropdown-item" href="#">Точилки</a></li>
+						</ul>
+					</li>
+					<hr>
+					<li class="nav-item">
+						<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Школные принадлежности</a>
+						<ul class="dropdown-menu fade-up">
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+						</ul>
+					</li>
+					<hr>
+					<li class="nav-item">
+						<a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Товары для творчества</a>
+						<ul class="dropdown-menu fade-up">
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+							<li><a class="dropdown-item" href="#">Товар категории...</a></li>
+						</ul>
+					</li>
+					<hr>
+					<li class="nav-item">
+						<div class="row">
+							<div class="col">
+								<a href="#">О компании</a>
+								<a href="#">Новости</a>
+								<a href="#">Технологии</a>
+							</div>
+							<div class="col">
+								<a href="#">Партнеры</a>
+								<a href="#">Контакты</a>
+							</div>
+						</div>
+					</li>
+					<hr>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+</div>
+</div>
+
+<!-- news page -->
+
+<div class="container partners">
+	<div class="l_tegs mt-2 mb-4">
+		<span><a href="index.html">Главная</a></span>
+		<span class="ml-1 mr-1">></span>
+		<span><a href="#">Партнеры</a></span>
+	</div>
+	<div class="about_title text-body mt-3 mb-4">Партнеры</div>
+<div class="row">
+	<a href="#" class="col-3"><img src="img/partners/sberbank.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/lomus.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/officeplanet.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/staff.png"></a>
+</div>
+<div class="row">
+	<a href="#" class="col-3"><img src="img/partners/brauberg.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/n1scool.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/lg.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/basf.png"></a>
+</div>
+<div class="row">
+	<a href="#" class="col-3"><img src="img/partners/officeplanet.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/staff.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/lomus.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/sberbank.png"></a>
+</div>
+<div class="row">
+	<a href="#" class="col-3"><img src="img/partners/basf.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/lg.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/brauberg.png"></a>
+	<a href="#" class="col-3"><img src="img/partners/n1scool.png"></a>
+</div>
+</div>
+
+
+
+<!-- footer -->
+<footer>
+	<div class="footer_inner">
+		<div class="wm_wrapper position-absolute">
+			<img src="img/footer_wm.svg" alt="">
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="foot_item col">
+					<div class="footitem_title">Еще</div>
+					<div class="footitem_text"><a href="#">О компании</a></div>
+					<div class="footitem_text"><a href="#">Новости</a></div>
+					<div class="footitem_text"><a href="#">Технологии</a></div>
+					<div class="footitem_text"><a href="#">Партнеры</a></div>
+					<div class="footitem_text"><a href="#">Контакты</a></div>
+				</div>
+				<div class="foot_item col">
+					<div class="footitem_title">Каталог</div>
+					<div class="footitem_text"><a href="#">Чертежные принадлежности</a></div>
+					<div class="footitem_text"><a href="#">Офисные принадлежности</a></div>
+					<div class="footitem_text"><a href="#">Школные принадлежности</a></div>
+					<div class="footitem_text"><a href="#">Школные принадлежности</a></div>
+				</div>
+				<div class="foot_item_search col">
+					<div class="footitem_title">Ищешь товар?</div>
+					<form class="footer_search" action="#">
+						<input type="text" placeholder="Поиск" name="search" class="footer_input">
+						<button type="submit" class="footer_btn">Найти</button>
+					</form>
+					<br>
+					<div class="footitem_title mt-2">Социальные сети</div>
+					<ul class="row p-0 w-75 social_icons">
+						<li class="col"><a href="#"><img src="img/social/insta.svg" alt=""></a></li>
+						<li class="col"><a href="#"><img src="img/social/yt.svg" alt=""></a></li>
+						<li class="col"><a href="#"><img src="img/social/vk.svg" alt=""></a></li>
+						<li class="col"><a href="#"><img src="img/social/fb.svg" alt=""></a></li>
+						<li class="col"><a href="#"><img src="img/social/wa.svg" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="foot_item col adapt_our">
+					<div class="footitem_title">Наши контакты</div>
+					<div class="our_cont">
+						<div class="mailphone">
+							<div class="footitem_text mail"><a href="info@ao-globus.ru">info@ao-globus.ru</a></div>
+							<div class="footitem_text phone"><a href="8 800 555-55-55">8 800 555-55-55</a></div>
+						</div>
+						<div class="footitem_text footitem_text_sp"><a href="#">Россия, 307370, Курская область,<br>
+						г. Рыльск, ул. Володарского, 136.</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="container mt65">
+		<div class="container pt-2">
+			<div class="bottomfooter d-flex justify-content-between">
+				<div class="bottomfootertext">Все права защищены ОАО Глобус, 2010-2020</div>
+				<img src="img/footer_lh.svg" alt="">
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/clone.js"></script>
+
+
+
+</div>
+
+</body>
+</html>
